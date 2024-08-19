@@ -15,9 +15,9 @@
     <string name="intent_extra_category_list">intent_extra_category_list</string>
     <string name="intent_extra_action_id">intent_extra_action_id</string>
     <string name="intent_extra_old_item_name">intent_extra_old_item_name</string>
-    <string name="message_added_item">Item added.</string>
-    <string name="message_edited_item">Item updated.</string>
-    <string name="message_deleted_item">Item deleted.</string>
+    <string name="message_added_item">\'%1$s\' added.</string>
+    <string name="message_edited_item">\'%1$s\' updated.</string>
+    <string name="message_deleted_item">\'%1$s\' deleted.</string>
     <string name="button_ok_label">OK</string>
     <string name="button_cancel_label">Cancel</string>
     <string name="button_delete_label">Delete</string>

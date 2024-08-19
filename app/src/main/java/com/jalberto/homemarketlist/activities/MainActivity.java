@@ -441,7 +441,7 @@ public class MainActivity extends AppCompatActivity
 
                     displayItemsCheckBoxList();
 
-                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.message_added_item), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.message_added_item, itemName), Toast.LENGTH_SHORT).show();
 
                     break;
                 }
@@ -464,7 +464,7 @@ public class MainActivity extends AppCompatActivity
                     itemDAO.add(item);
 
                     displayItemsCheckBoxList();
-                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.message_edited_item), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.message_edited_item, oldItemName), Toast.LENGTH_SHORT).show();
                     break;
                 }
                 case TASK_CODE_DELETE_ITEM:
@@ -474,7 +474,7 @@ public class MainActivity extends AppCompatActivity
                     itemDAO.delete(itemDAO.getByName(itemName));
 
                     displayItemsCheckBoxList();
-                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.message_deleted_item), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.message_deleted_item, itemName), Toast.LENGTH_SHORT).show();
                     break;
                 }
             }
