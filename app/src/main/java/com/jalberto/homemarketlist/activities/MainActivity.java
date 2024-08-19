@@ -451,16 +451,17 @@ public class MainActivity extends AppCompatActivity
                     String newItemName = data.getStringExtra(getResources().getString(R.string.intent_extra_item_name));
                     String oldItemName = data.getStringExtra(getResources().getString(R.string.intent_extra_old_item_name));
 
+                    Item oldItem = itemDAO.getByName(oldItemName);
                     Category category = categoryDAO.getByName(categoryName);
                     Item item = new Item(newItemName, category);
+
                     if (at == AT_MARKET)
                     {
                         item.setIsOutOf(true);
                     }
 
-                    Item oldItem = new Item(oldItemName, item.getCategory());
-                    itemDAO.set(oldItem, item);
-                    //itemDAO.add(item);
+                    itemDAO.delete(oldItem);
+                    itemDAO.add(item);
 
                     displayItemsCheckBoxList();
                     Toast.makeText(getApplicationContext(), getResources().getString(R.string.message_edited_item), Toast.LENGTH_SHORT).show();
