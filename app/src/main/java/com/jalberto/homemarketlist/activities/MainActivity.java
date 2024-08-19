@@ -204,6 +204,7 @@ public class MainActivity extends AppCompatActivity
                 CheckBox itemCheckBox = new CheckBox(getApplicationContext());
                 itemCheckBox.setText(item.getName());
                 itemCheckBox.setTextColor(Color.BLACK);
+                itemCheckBox.setTextSize(18);
                 itemsLayout.addView(itemCheckBox);
                 itemCheckBoxList.add(itemCheckBox);
 
@@ -262,6 +263,7 @@ public class MainActivity extends AppCompatActivity
                     CheckBox itemCheckBox = new CheckBox(getApplicationContext());
                     itemCheckBox.setText(item.getName());
                     itemCheckBox.setTextColor(Color.BLACK);
+                    itemCheckBox.setTextSize(18);
                     itemsLayout.addView(itemCheckBox);
                     itemCheckBoxList.add(itemCheckBox);
                     itemCheckBox.setButtonDrawable(getResources().getDrawable(R.drawable.custom_checkbox_market));

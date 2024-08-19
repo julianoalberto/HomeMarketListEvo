@@ -58,8 +58,9 @@
                 android:id="@+id/filterEditText"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:hint="@string/filter_edit_text_hint"
-                android:maxLength="25"/>
+                android:maxLength="25" />
 
             <ImageButton
                 android:id="@+id/clearFilterButton"
@@ -78,24 +79,25 @@
         </RelativeLayout>
 
         <ImageButton
+            android:id="@+id/addItemButton"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/addItemButton"
-            android:src="@drawable/plus24"
-            android:onClick="addItem"/>
+            android:layout_margin="10dp"
+            android:onClick="addItem"
+            android:src="@drawable/plus24" />
     </LinearLayout>
 
     <!--Items panel -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
         <!--Items list -->
         <LinearLayout
+            android:id="@+id/itemsLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/itemsLayout"
-            android:orientation="vertical">
-        </LinearLayout>
+            android:orientation="vertical"></LinearLayout>
     </ScrollView>
 </LinearLayout>
