@@ -415,6 +415,8 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
+        super.onActivityResult(requestCode, resultCode, data);
+
         if (resultCode == Activity.RESULT_OK)
         {
             switch (data.getIntExtra(getResources().getString(R.string.intent_extra_action_id), -1))
@@ -467,6 +469,7 @@ public class MainActivity extends AppCompatActivity
                 case TASK_CODE_DELETE_ITEM:
                 {
                     String itemName = data.getStringExtra(getResources().getString(R.string.intent_extra_item_name));
+
                     itemDAO.delete(itemDAO.getByName(itemName));
 
                     displayItemsCheckBoxList();

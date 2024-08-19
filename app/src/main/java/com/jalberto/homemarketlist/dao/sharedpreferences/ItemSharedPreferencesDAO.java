@@ -75,7 +75,9 @@ public class ItemSharedPreferencesDAO extends AbstractSharedPreferencesDAO imple
     @Override
     public Item getByName(String name)
     {
-        return itemsMap.get(name);
+        String key = ITEM_PREFIX + generateId(name);
+
+        return itemsMap.get(key);
     }
 
     @Override
@@ -92,8 +94,10 @@ public class ItemSharedPreferencesDAO extends AbstractSharedPreferencesDAO imple
     public boolean delete(Item item)
     {
         String key = ITEM_PREFIX + generateId(item.getName());
+
         itemsMap.remove(key);
         sharedPreferences.edit().remove(key).apply();
+
         return true;
     }
 
@@ -236,6 +240,4 @@ public class ItemSharedPreferencesDAO extends AbstractSharedPreferencesDAO imple
 
         return item;
     }
-
-
 }
