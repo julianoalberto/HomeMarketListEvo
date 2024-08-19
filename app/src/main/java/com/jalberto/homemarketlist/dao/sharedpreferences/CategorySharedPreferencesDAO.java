@@ -104,28 +104,16 @@ public class CategorySharedPreferencesDAO extends AbstractSharedPreferencesDAO i
     {
         categoryList = new ArrayList<Category>();
 
-        /*<string>Outros</string>
-        <string>Frios</string>
-        <string>Higiene</string>
-        <string>Casa</string>
-        <string>Cachorros</string>
-        <string>Hortifruti</string>
-        <string>Bebidas</string>
-        <string>Limpeza</string>
-        <string>Doces</string>
-        <string>Comidas</string>
-        <string>Carnes</string>*/
-
-        categoryList.add(new Category("Bebidas"));
-        categoryList.add(new Category("Cachorros"));
+       categoryList.add(new Category("Bebidas"));
         categoryList.add(new Category("Carnes"));
-        categoryList.add(new Category("Casa"));
         categoryList.add(new Category("Comidas"));
         categoryList.add(new Category("Doces"));
         categoryList.add(new Category("Frios"));
         categoryList.add(new Category("Higiene"));
         categoryList.add(new Category("Hortifruti"));
         categoryList.add(new Category("Limpeza"));
+        categoryList.add(new Category("Pães"));
+        categoryList.add(new Category("Peixes"));
         categoryList.add(new Category("Outros"));
 
         HashSet<String> categorySet = new HashSet<String>();
