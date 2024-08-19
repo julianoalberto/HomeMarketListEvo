@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.homemarketlist"
+    namespace = "com.jalberto.homemarketlist"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.homemarketlist"
+        applicationId = "com.jalberto.homemarketlist"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

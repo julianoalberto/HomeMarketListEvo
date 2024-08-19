@@ -22,7 +22,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.homemarketlist.R;
+import com.jalberto.homemarketlist.R;
 import com.jalberto.homemarketlist.dao.CategoryDAO;
 import com.jalberto.homemarketlist.dao.ItemDAO;
 import com.jalberto.homemarketlist.dao.sharedpreferences.CategorySharedPreferencesDAO;
