@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:id="@+id/mainLayout"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!--Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonsLayout"
+        android:orientation="horizontal">
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/home24"
+            android:id="@+id/buttonHome"
+            android:onClick="atHome"/>
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/cart24"
+            android:id="@+id/buttonMarket"
+            android:onClick="atMarket"/>
+
+    </LinearLayout>
+
+    <!--Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/headerLayout"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:id="@+id/headerLayout2"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <!-- Filter -->
+            <EditText
+                android:id="@+id/filterEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/filter_edit_text_hint"
+                android:maxLength="25"/>
+
+            <ImageButton
+                android:id="@+id/clearFilterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/delete12"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:text="Button"
+                android:onClick="clearFilter"
+                android:visibility="invisible"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:padding="10dp"/>
+        </RelativeLayout>
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addItemButton"
+            android:src="@drawable/plus24"
+            android:onClick="addItem"/>
+    </LinearLayout>
+
+    <!--Items panel -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--Items list -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/itemsLayout"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

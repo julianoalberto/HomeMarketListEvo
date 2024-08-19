@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">"CasaMercado"</string>
+    <string name="button_home_label">"Em casa"</string>
+    <string name="button_market_label">"No mercado"</string>
+    <string name="filter_edit_text_hint">Filtro</string>
+    <string name="title_activity_add_item">AddItemActivity</string>
+    <string name="add_item_edit_text_hint">Item</string>
+    <string name="add_new_item_category_header">Categoria</string>
+
+
+    <string name="application_data_shared_preferences_file_name">application_data_shared_preferences_file_name</string>
+
+    <string name="intent_extra_item_name">intent_extra_item_name</string>
+    <string name="intent_extra_category_name">intent_extra_category_name</string>
+    <string name="intent_extra_category_list">intent_extra_category_list</string>
+    <string name="intent_extra_action_id">intent_extra_action_id</string>
+    <string name="intent_extra_old_item_name">intent_extra_old_item_name</string>
+    <string name="message_added_item">Item adicionado.</string>
+    <string name="message_edited_item">Item atualizado.</string>
+    <string name="message_deleted_item">Item apagado.</string>
+    <string name="button_ok_label">OK</string>
+    <string name="button_cancel_label">Cancelar</string>
+    <string name="button_delete_label">Apagar item</string>
+    <string name="button_plus_label">+</string>
+    <string name="message_type_name">Por favor, digite o nome do item.</string>
+    <string name="message_select_category">Por favor, selecione uma categoria.</string>
+
+    <string-array name="categories_array">
+        <item>Frios</item>
+        <item>Hortifruti</item>
+        <item>Limpeza</item>
+        <item>Higiene</item>
+        <item>Carnes</item>
+        <item>Doces</item>
+    </string-array>
+
+
+</resources>

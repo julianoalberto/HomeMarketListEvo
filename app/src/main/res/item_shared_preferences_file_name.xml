@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="item.brócolis">Brócolis;false;hortifruti</string>
+    <string name="item.creme_de_leite">Creme de leite;false;comidas</string>
+    <string name="item.berinjela">Berinjela;false;hortifruti</string>
+    <string name="item.painço">Painço;false;cachorros</string>
+    <string name="item.álcool">Álcool;false;limpeza</string>
+    <string name="item.tapioca">Tapioca;false;comidas</string>
+    <string name="item.peito_de_frango">Peito de frango;false;carnes</string>
+    <string name="item.leite_condensado">Leite condensado;false;comidas</string>
+    <string name="item.maçã">Maçã;false;hortifruti</string>
+    <string name="item.abacaxi">Abacaxi;false;hortifruti</string>
+    <string name="item.figado">Figado;false;carnes</string>
+    <string name="item.castanha_do_pará">Castanha do Pará;false;hortifruti</string>
+    <string name="item.fruta_diferente">Fruta diferente;false;hortifruti</string>
+    <string name="item.sardinha">Sardinha;false;comidas</string>
+    <string name="item.palmito">Palmito;false;comidas</string>
+    <string name="item.queijo_branco">Queijo branco;false;frios</string>
+    <string name="item.mandioca_congelada">Mandioca congelada;false;hortifruti</string>
+    <string name="item.ponkan">Ponkan;false;hortifruti</string>
+    <string name="item.laranja">Laranja;false;hortifruti</string>
+    <string name="item.manteiga">Manteiga;false;frios</string>
+    <string name="item.queijo_prato">Queijo prato;false;frios</string>
+    <string name="item.chicória">Chicória;false;hortifruti</string>
+    <string name="item.bife_bovino">Bife bovino;true;carnes</string>
+    <string name="item.açúcar">Açúcar;false;comidas</string>
+    <string name="item.batata">Batata;false;hortifruti</string>
+    <string name="item.alho">Alho;false;hortifruti</string>
+    <string name="item.ovo">Ovo;false;hortifruti</string>
+    <string name="item.cha">Cha;false;comidas</string>
+    <string name="item.arroz_5_quilos">Arroz 5 quilos;false;comidas</string>
+    <string name="item.batata_doce">Batata doce;false;hortifruti</string>
+    <string name="item.alface">Alface;false;hortifruti</string>
+    <string name="item.pão_integral">Pão integral;false;comidas</string>
+    <string name="item.amaciante">Amaciante;false;limpeza</string>
+    <string name="item.goiaba">Goiaba;false;hortifruti</string>
+    <string name="item.bicarbonato_de_sódio">Bicarbonato de sódio;false;comidas</string>
+    <string name="item.desinfetante_chão">Desinfetante chão;false;limpeza</string>
+    <string name="item.iogurte">Iogurte;false;frios</string>
+    <string name="item.café_em_grao">Café em grao;false;bebidas</string>
+    <set name="category">
+        <string>Outros</string>
+        <string>Frios</string>
+        <string>Higiene</string>
+        <string>Casa</string>
+        <string>Cachorros</string>
+        <string>Hortifruti</string>
+        <string>Bebidas</string>
+        <string>Limpeza</string>
+        <string>Comidas</string>
+        <string>Doces</string>
+        <string>Carnes</string>
+    </set>
+    <string name="item.mussarela">Mussarela;false;frios</string>
+    <string name="item.bolacha_de_arroz">Bolacha de arroz;false;comidas</string>
+    <string name="item.quinua_flocos">Quinua flocos;false;comidas</string>
+    <string name="item.macarrão_integral">Macarrão integral;false;comidas</string>
+    <string name="item.sanito">Sanito;false;limpeza</string>
+    <string name="item.esponja_louça">Esponja louça;false;limpeza</string>
+    <string name="item.peixe">Peixe;false;carnes</string>
+    <string name="item.feijão_preto">Feijão preto;false;comidas</string>
+    <string name="item.guardanapo_papel">Guardanapo papel;false;higiene</string>
+    <string name="item.vagem">Vagem;false;hortifruti</string>
+    <string name="item.atum">Atum;false;comidas</string>
+    <string name="item.arroz_7_grãos">Arroz 7 grãos;false;comidas</string>
+    <string name="item.beterraba">Beterraba;false;hortifruti</string>
+    <string name="item.pasta_de_dentes">Pasta de dentes;false;higiene</string>
+    <string name="item.cacau_em_pó">Cacau em pó;true;comidas</string>
+    <string name="item.mamão">Mamão;false;hortifruti</string>
+    <string name="item.pano_de_pia">Pano de pia;false;limpeza</string>
+    <string name="item.sabão_roupa">Sabão roupa;false;limpeza</string>
+    <string name="item.queijo_cheddar">Queijo cheddar;false;frios</string>
+    <string name="item.coca_lata">Coca lata;false;bebidas</string>
+    <string name="item.azeite">Azeite;false;comidas</string>
+    <string name="item.cebola">Cebola;false;hortifruti</string>
+    <string name="item.gatorade">Gatorade;false;bebidas</string>
+    <string name="item.tomate">Tomate;false;hortifruti</string>
+    <string name="item.leite">Leite;false;frios</string>
+    <string name="item.alho_poró">Alho poró;true;hortifruti</string>
+    <string name="item.geleia">Geleia;false;comidas</string>
+    <string name="item.ovomaltine">Ovomaltine;false;comidas</string>
+    <string name="item.água_com_gás_">Água com gás ;false;bebidas</string>
+    <string name="item.detergente">Detergente;false;limpeza</string>
+    <string name="item.banana">Banana;false;hortifruti</string>
+    <string name="item.carne_moída">Carne moída;true;carnes</string>
+    <string name="item.pato_privada">Pato privada;false;limpeza</string>
+    <string name="item.ossinho">Ossinho;false;cachorros</string>
+    <string name="item.aveia_fina">Aveia fina;false;comidas</string>
+    <string name="item.presunto">Presunto;false;frios</string>
+    <string name="item.granola">Granola;false;comidas</string>
+    <string name="item.sabonete">Sabonete;false;higiene</string>
+    <string name="item.cenoura">Cenoura;false;hortifruti</string>
+    <string name="item.cloro">Cloro;false;limpeza</string>
+    <string name="item.arroz_integral">Arroz integral;false;comidas</string>
+    <string name="item.desodorante_masculino">Desodorante masculino;false;higiene</string>
+    <string name="item.salsicha_canina">Salsicha canina;false;frios</string>
+    <string name="item.mel">Mel;false;comidas</string>
+    <string name="item.renova_ar_momentos_infancia">Renova ar momentos infancia;false;limpeza</string>
+    <string name="item.rúcula">Rúcula;false;hortifruti</string>
+    <string name="item.pasta_de_amendoim">Pasta de amendoim;false;comidas</string>
+    <string name="item.abacate">Abacate;false;hortifruti</string>
+</map>
