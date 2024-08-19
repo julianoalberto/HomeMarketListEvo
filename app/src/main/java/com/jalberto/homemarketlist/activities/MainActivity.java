@@ -105,7 +105,6 @@ public class MainActivity extends AppCompatActivity
         displayItemsCheckBoxList();
         createClearFilterButton();
         createToast();
-        setHomeButtonEvent();
     }
 
     private void createToast()
@@ -518,29 +517,5 @@ public class MainActivity extends AppCompatActivity
     {
         toast.setText(message);
         toast.show();
-    }
-
-    private void setHomeButtonEvent() {
-        ImageButton homeButton = (ImageButton) findViewById(R.id.buttonHome);
-        homeButton.setOnLongClickListener(new View.OnLongClickListener()
-        {
-            @Override
-            public boolean onLongClick(View v)
-            {
-                toast.setText("Synchronyzing...");
-                toast.show();
-                try {
-                    itemDAO.synchronize();
-                    displayItemsCheckBoxList();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    toast.setText("Error synchronizing: " + e.getMessage());
-                    toast.show();
-                }
-                toast.setText("Synchronyzed.");
-                toast.show();
-                return true;
-            }
-        });
     }
 }
