@@ -13,7 +13,9 @@ import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
-import com.jalberto.homemarketlist.R;
+
+import com.example.homemarketlist.R;
+
 import java.util.ArrayList;
 
 public class EditItemActivity extends AppCompatActivity
