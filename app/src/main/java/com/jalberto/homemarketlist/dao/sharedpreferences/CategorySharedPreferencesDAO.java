@@ -1,5 +1,6 @@
 package com.jalberto.homemarketlist.dao.sharedpreferences;
 
+import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.jalberto.homemarketlist.dao.CategoryDAO;
@@ -20,12 +21,21 @@ public class CategorySharedPreferencesDAO extends AbstractSharedPreferencesDAO i
 {
     public static final String CATEGORY_LIST_PREFIX = "category";
 
+    public static final String PREF_POPULATE = "preferences.populate";
+
     private List<Category> categoryList;
 
     public CategorySharedPreferencesDAO(SharedPreferences sharedPreferences)
     {
         this.sharedPreferences = sharedPreferences;
-        //populate();
+
+        boolean populate = this.sharedPreferences.getBoolean(PREF_POPULATE, true);
+
+        if(populate) {
+            populate();
+        }
+
+        this.sharedPreferences.edit().putBoolean(PREF_POPULATE, false).commit();
     }
 
     @Override
@@ -79,7 +89,6 @@ public class CategorySharedPreferencesDAO extends AbstractSharedPreferencesDAO i
 
     public void load()
     {
-        populate();
         Set<String> categorySet = sharedPreferences.getStringSet(CATEGORY_LIST_PREFIX, new HashSet<String>());
 
         this.categoryList = new ArrayList<Category>();

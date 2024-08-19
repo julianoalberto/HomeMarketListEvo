@@ -59,6 +59,8 @@ public class MainActivity extends AppCompatActivity
 
     private int at;
 
+    private boolean populate;
+
     private ItemDAO itemDAO;
 
     private CategoryDAO categoryDAO;
