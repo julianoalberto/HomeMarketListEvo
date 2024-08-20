@@ -56,31 +56,35 @@
     </RelativeLayout>
 
     <EditText
+        android:id="@+id/itemNameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/itemNameEditText"
-        android:hint="@string/add_item_edit_text_hint"
-        />
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/add_item_edit_text_hint" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/add_new_item_category_header"/>
+        android:layout_marginLeft="10dp"
+        android:text="@string/add_new_item_category_header" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <!--Items list -->
         <LinearLayout
+            android:id="@+id/addItemCategoryRadioButtonGroupLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/addItemCategoryRadioButtonGroupLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:orientation="vertical">
 
             <RadioGroup
+                android:id="@+id/addItemCategoryRadioButtonGroup"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/addItemCategoryRadioButtonGroup">
+                android:layout_height="wrap_content">
 
                 <!-- RadioButtons are dinamically generated in code -->
 
